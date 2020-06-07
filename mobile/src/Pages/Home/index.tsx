@@ -96,8 +96,8 @@ function handleSelectedCity(value: string) {
                 autoCorrect={false}
                 onChangeText={setCity} 
               /> */}
-
-              <RNPickerSelect            
+              <Text style={[styles.description, {marginLeft:10}]}>Selecione uma UF</Text>
+              <RNPickerSelect          
                 key="selectUf"                      
                 value={selectedUf}            
                 onValueChange={(value) => handleSelectedUf(value)}
@@ -106,7 +106,8 @@ function handleSelectedCity(value: string) {
                 ))}
               />
 
-              <RNPickerSelect  
+              <Text style={[styles.description, {marginLeft:10}]}>Selecione uma Cidade</Text>
+              <RNPickerSelect   
                 key="selectCity"                         
                 value={selectedCity}                           
                 onValueChange={(value) => handleSelectedCity(value)}
@@ -161,8 +162,6 @@ const styles = StyleSheet.create({
     },
   
     footer: {},
-  
-    select: {},
   
     input: {
       height: 60,
